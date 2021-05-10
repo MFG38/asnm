@@ -15,3 +15,13 @@ mixin class NMRenderTransOnly
 		Translation "NightmareColorTrans";
 	}
 }
+
+mixin class NMRenderSpectre
+{
+	Default
+	{
+		Translation "NightmareSpectreTrans";
+		RenderStyle "Translucent";
+		Alpha 0.2;
+	}
+}

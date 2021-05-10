@@ -127,15 +127,7 @@ class ASNM_NightmareDemon : Demon
 
 class ASNM_NightmareSpectre : Spectre
 {
-	// Define rendering properties separately instead of using the
-	// mixin to make the Spectres that much more distinct from the
-	// regular Demons.
-	Default
-	{
-		Translation "NightmareSpectreTrans";
-		RenderStyle "Translucent";
-		Alpha 0.2;
-	}
+	mixin NMRenderSpectre;
 	
 	States
 	{
@@ -232,6 +224,13 @@ class ASNM_NightmarePainElemental : PainElemental
 		PAIN F 5 BRIGHT A_FaceTarget;
 		PAIN F 0 BRIGHT A_PainAttack("ASNM_NightmareLostSoul");
 		Goto See;
+	Death:
+		PAIN H 8 BRIGHT;
+		PAIN I 8 BRIGHT A_Scream;
+		PAIN JK 8 BRIGHT;
+		PAIN L 8 BRIGHT A_PainDie("ASNM_NightmareLostSoul");
+		PAIN M 8 BRIGHT;
+		Stop;
 	}
 }
 
