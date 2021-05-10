@@ -27,7 +27,7 @@ class ASNM_NightmareArchvile : Archvile
 	
 	Default
 	{
-		Health 850;
+		Health 800;
 		+MISSILEMORE;
 	}
 }
@@ -184,7 +184,7 @@ class ASNM_NightmareFatso : Fatso
 	
 	Default
 	{
-		Health 750;
+		Health 720;
 		+MISSILEMORE;
 	}
 }
