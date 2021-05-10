@@ -1,4 +1,4 @@
-extend class Actor
+mixin class NMAttackFunctions
 {
 	void A_NMBruisAttack()
 	{

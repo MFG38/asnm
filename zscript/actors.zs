@@ -39,6 +39,7 @@ class ASNM_NightmareArchvile : Archvile
 class ASNM_NightmareBaron : BaronOfHell
 {
 	mixin NMRenderProperties;
+	mixin NMAttackFunctions;
 	
 	States
 	{
@@ -53,6 +54,7 @@ class ASNM_NightmareBaron : BaronOfHell
 class ASNM_NightmareHellKnight : HellKnight
 {
 	mixin NMRenderProperties;
+	mixin NMAttackFunctions;
 	
 	States
 	{
@@ -81,6 +83,7 @@ class ASNM_BaronBall : BaronBall
 class ASNM_NightmareCacodemon : Cacodemon
 {
 	mixin NMRenderProperties;
+	mixin NMAttackFunctions;
 	
 	States
 	{
@@ -153,6 +156,7 @@ class ASNM_NightmareSpectre : Spectre
 class ASNM_NightmareImp : DoomImp
 {
 	mixin NMRenderProperties;
+	mixin NMAttackFunctions;
 	
 	States
 	{
