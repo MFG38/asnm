@@ -68,7 +68,7 @@ class ASNM_NightmareHellKnight : HellKnight
 
 class ASNM_BaronBall : BaronBall
 {
-	mixin NMRenderTransOnly;
+	mixin NMRenderProperties;
 	
 	Default
 	{
@@ -97,7 +97,7 @@ class ASNM_NightmareCacodemon : Cacodemon
 
 class ASNM_CacodemonBall : CacodemonBall
 {
-	mixin NMRenderTransOnly;
+	mixin NMRenderProperties;
 	
 	Default
 	{
@@ -170,7 +170,7 @@ class ASNM_NightmareImp : DoomImp
 
 class ASNM_ImpBall : DoomImpBall
 {
-	mixin NMRenderTransOnly;
+	mixin NMRenderProperties;
 	
 	Default
 	{

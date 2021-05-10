@@ -1,2 +1,2 @@
-NightmareColorTrans = "0:255=#[15,0,51]"
+NightmareColorTrans = "0:255=#[39,5,65]"
 NightmareSpectreTrans = "0:255=#[60,60,60]"

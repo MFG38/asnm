@@ -4,7 +4,7 @@ mixin class NMRenderProperties
 	{
 		Translation "NightmareColorTrans";
 		RenderStyle "Translucent";
-		Alpha 0.8;
+		Alpha 0.9;
 	}
 }
 
