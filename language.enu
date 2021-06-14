@@ -1,0 +1,4 @@
+[enu default]
+
+ASNM_OPTIONS_TITLE = "ASNM Settings";
+ASNM_CVAR_SPAWNCHANCE = "Nightmare monster spawn chance";

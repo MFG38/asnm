@@ -1,4 +1,4 @@
 gameinfo
 {
-	AddEventHandlers = "ASNM_SpawningHandler"
+	AddEventHandlers = "ASNM_SpawningHandler", "ASNM_StaticHandler"
 }

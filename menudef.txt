@@ -1,0 +1,6 @@
+AddOptionMenu "OptionsMenu"
+{
+	StaticText ""
+	StaticText "$ASNM_OPTIONS_TITLE", Gold
+	Slider "$ASNM_CVAR_SPAWNCHANCE", "asnm_spawnchance", 0, 10
+}

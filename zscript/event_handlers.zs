@@ -114,3 +114,11 @@ class ASNM_SpawningHandler : EventHandler
 		}
 	}
 }
+
+class ASNM_StaticHandler : StaticEventHandler
+{
+	override void OnRegister()
+	{
+		Console.Printf("\ctAlways Sometimes Nightmares %s\c-",StringTable.Localize("$ASNM_VERSIONNUM"));
+	}
+}
