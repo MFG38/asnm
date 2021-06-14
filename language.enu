@@ -2,3 +2,6 @@
 
 ASNM_OPTIONS_TITLE = "ASNM Settings";
 ASNM_CVAR_SPAWNCHANCE = "Nightmare monster spawn chance";
+ASNM_DESC_SPAWNCHANCE =
+	"Controls the spawning chance of a Nightmare monster.\n"
+	"0 = never spawn, 10 = always spawn.";
