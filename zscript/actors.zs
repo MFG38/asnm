@@ -145,7 +145,7 @@ class ASNM_NightmareSpectre : Spectre
 // IMP //
 /////////
 
-class ASNM_NightmareDoomImp : DoomImp
+class ASNM_NightmareImp : DoomImp
 {
 	mixin NMRenderProperties;
 	mixin NMAttackFunctions;
