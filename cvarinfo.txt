@@ -1,1 +1,5 @@
+// Just one cvar that controls the spawning chance of a Nightmare
+// monster. Valid values: 0-10, with 0 being "never" chance and
+// 10 being "always" chance.
+
 server int asnm_spawnchance = 5;
