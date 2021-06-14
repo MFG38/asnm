@@ -52,7 +52,7 @@ mixin class NMAttackFunctions
 			}
 			else
 			{
-				SpawnMissile (targ, "ASNM_ImpBall");
+				SpawnMissile (targ, "ASNM_DoomImpBall");
 			}
 		}
 	}

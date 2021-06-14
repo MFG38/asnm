@@ -1,67 +1,39 @@
 class ASNM_SpawningHandler : EventHandler
 {
+	array<Class<Actor> > replaceables;
+	
+	override void OnRegister()
+	{
+		replaceables.Push((<Class<Actor> >)('Arachnotron'));
+		replaceables.Push((<Class<Actor> >)('Archvile'));
+		replaceables.Push((<Class<Actor> >)('BaronOfHell'));
+		replaceables.Push((<Class<Actor> >)('Cacodemon'));
+		replaceables.Push((<Class<Actor> >)('Demon'));
+		replaceables.Push((<Class<Actor> >)('DoomImp'));
+		replaceables.Push((<Class<Actor> >)('Fatso'));
+		replaceables.Push((<Class<Actor> >)('HellKnight'));
+		replaceables.Push((<Class<Actor> >)('LostSoul'));
+		replaceables.Push((<Class<Actor> >)('PainElemental'));
+		replaceables.Push((<Class<Actor> >)('Revenant'));
+		replaceables.Push((<Class<Actor> >)('Spectre'));
+	}
+	
 	override void CheckReplacement(ReplaceEvent e)
 	{
 		cvar chance = CVar.FindCVar('asnm_spawnchance');
+		array<int> i;
 		
-		if(e.Replacee == 'Arachnotron')
+		if(replaceables.Find(e.Replacee) < replaceables.Size())
 		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareArachnotron';
-		}
-		
-		else if(e.Replacee == 'Archvile')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareArchvile';
-		}
-		
-		else if(e.Replacee == 'BaronOfHell')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareBaron';
-		}
-		
-		else if(e.Replacee == 'Cacodemon')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareCacodemon';
-		}
-		
-		else if(e.Replacee == 'Demon')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareDemon';
-		}
-		
-		else if(e.Replacee == 'DoomImp')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareImp';
-		}
-		
-		else if(e.Replacee == 'Fatso')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareFatso';
-		}
-		
-		else if(e.Replacee == 'HellKnight')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareHellKnight';
-		}
-		
-		else if(e.Replacee == 'LostSoul')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareLostSoul';
-		}
-		
-		else if(e.Replacee == 'PainElemental')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmarePainElemental';
-		}
-		
-		else if(e.Replacee == 'Revenant')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareRevenant';
-		}
-		
-		else if(e.Replacee == 'Spectre')
-		{
-			if(Random(1,10) <= chance.GetInt()) e.Replacement = 'ASNM_NightmareSpectre';
+			int j = Random(1,10);
+			i.Push((<int>)(j));
+			
+			if(j <= chance.GetInt())
+			{
+				e.Replacement = String.Format('ASNM_Nightmare%s',e.Replacee);
+				e.IsFinal = true;
+			}
+			else { return; }
 		}
 	}
 }
