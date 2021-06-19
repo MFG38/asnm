@@ -5,7 +5,12 @@ class ASNM_SpawningHandler : EventHandler
 		cvar chance = CVar.FindCVar('asnm_spawnchance');
 		int i;
 		
-		if(e.Replacee == 'Arachnotron')
+		// Doom & Doom 2 map special de-fuckification
+		if((level.mapname ~== "E1M8") && (e.Replacee == 'BaronOfHell')) { return; }
+		if((level.mapname ~== "MAP07") && ((e.Replacee == 'Fatso') || (e.Replacee == 'Arachnotron'))) { return; }
+		
+		// General replacement handling
+		else if(e.Replacee == 'Arachnotron')
 		{
 			i = Random(1,10);
 			if(i <= chance.GetInt())
