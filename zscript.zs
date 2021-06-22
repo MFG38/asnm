@@ -1,4 +1,4 @@
-version "4.3"
+version "4.5"
 
 #include "zscript/actors.zs"
 #include "zscript/event_handlers.zs"

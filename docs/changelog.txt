@@ -1,6 +1,7 @@
 [????-??-??] v1.0.1:
 - Added safeguard mechanic for avoiding breakage in Ultimate Doom E1M8
   and Doom 2 MAP07.
+- Bumped ZScript version from 4.3 to 4.5.
 
 [2021-06-15] v1.0:
 - Initial release.

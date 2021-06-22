@@ -27,7 +27,7 @@ themselves.
 2.  REQUIREMENTS AND COMPATIBILITY
 ----------------------------------
 
-ASNM requires GZDoom 4.3.0 at a minimum to run. Due to being implemented in
+ASNM requires GZDoom 4.5.0 at a minimum to run. Due to being implemented in
 ZScript rather than DECORATE/ACS, the mod works *ONLY* in GZDoom (maybe also
 LZDoom, but that's untested). Please don't try to run the mod in Zandronum
 and then come complaining that it doesn't work when it was never planned in
