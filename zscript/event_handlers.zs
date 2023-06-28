@@ -12,8 +12,7 @@ class ASNM_SpawningHandler : EventHandler
 		// General replacement handling
 		else if(e.Replacee == 'Arachnotron')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareArachnotron';
 			}
@@ -21,8 +20,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'Archvile')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareArchvile';
 			}
@@ -30,8 +28,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'BaronOfHell')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareBaron';
 			}
@@ -39,8 +36,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'Cacodemon')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareCacodemon';
 			}
@@ -48,8 +44,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'Demon')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareDemon';
 			}
@@ -57,8 +52,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'DoomImp')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareImp';
 			}
@@ -66,8 +60,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'Fatso')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareFatso';
 			}
@@ -75,8 +68,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'HellKnight')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareHellKnight';
 			}
@@ -84,8 +76,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'LostSoul')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareLostSoul';
 			}
@@ -93,8 +84,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'PainElemental')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmarePainElemental';
 			}
@@ -102,8 +92,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'Revenant')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareRevenant';
 			}
@@ -111,8 +100,7 @@ class ASNM_SpawningHandler : EventHandler
 		
 		else if(e.Replacee == 'Spectre')
 		{
-			i = Random(1,10);
-			if(i <= chance.GetInt())
+			if(Random(1,10) <= chance.GetInt())
 			{
 				e.Replacement = 'ASNM_NightmareSpectre';
 			}

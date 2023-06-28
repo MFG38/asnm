@@ -118,10 +118,18 @@ class ASNM_NightmareDemon : Demon
 	See:
 		SARG AABBCCDD 1 A_Chase;
 		Loop;
+	See2:
+		SARG AABBCCDD 1 A_Chase;
+		Loop;
 	Melee:
 		SARG EF 4 A_FaceTarget;
 		SARG G 4 A_SargAttack;
 		Goto See;
+	Pain:
+		Pain:
+		SARG H 1;
+		SARG H 1 A_Pain;
+		Goto See2;
 	}
 }
 
@@ -134,10 +142,18 @@ class ASNM_NightmareSpectre : Spectre
 	See:
 		SARG AABBCCDD 1 A_Chase;
 		Loop;
+	See2:
+		SARG AABBCCDD 1 A_Chase;
+		Loop;
 	Melee:
 		SARG EF 4 A_FaceTarget;
 		SARG G 4 A_SargAttack;
 		Goto See;
+	Pain:
+		Pain:
+		SARG H 1;
+		SARG H 1 A_Pain;
+		Goto See2;
 	}
 }
 
