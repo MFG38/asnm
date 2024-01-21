@@ -1,1 +1,2 @@
 *.zs linguist-language=C#
+_build.sh text eol=lf
