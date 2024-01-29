@@ -1,3 +1,7 @@
+[2024-01-29] v1.0.3:
+- Fixed an error that caused the previously mentioned bug with the
+  Nightmare Demons/Spectres.
+
 [2023-06-28] v1.0.2:
 - Fixed Nightmare Demons and Spectres slowing down to normal speed when
   entering their pain states.
