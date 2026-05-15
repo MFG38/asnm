@@ -46,8 +46,8 @@ recommended.
 
 Simpy drag and drop asnm_*.pk3 on top of gzdoom.exe or use your launcher of choice.
 If you downloaded a copy of the mod's source from GitHub, unzip the archive to your
-folder of choice and run either _build.bat or _build.sh, depending on your OS. This
-will generate a .pk3 file in the _build folder that can then be loaded in GZDoom.
+folder of choice and run either build.bat or build.sh, depending on your OS. This
+will generate a .pk3 file in the _build/ folder that can then be loaded in GZDoom.
 
 
 4.  TECHNICAL/GAMEPLAY DETAILS

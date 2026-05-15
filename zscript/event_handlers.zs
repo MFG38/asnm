@@ -3,11 +3,14 @@ class ASNM_SpawningHandler : EventHandler
 	override void CheckReplacement (ReplaceEvent e)
 	{
 		cvar chance = CVar.FindCVar('asnm_spawnchance');
-		int i;
 		
 		// Doom & Doom 2 map special de-fuckification
-		if((level.mapname ~== "E1M8") && (e.Replacee == 'BaronOfHell')) { return; }
-		if((level.mapname ~== "MAP07") && ((e.Replacee == 'Fatso') || (e.Replacee == 'Arachnotron'))) { return; }
+		if((level.mapname ~== "E1M8") && (e.Replacee == 'BaronOfHell')) return;
+		if((   
+            level.mapname ~== "MAP07" || level.mapname ~== "TN_MAP07" || level.mapname ~== "PL_MAP07" ||
+            level.mapname ~== "ML_MAP19" || level.mapname ~== "ML_MAP20")
+            && ((e.Replacee == 'Fatso') || (e.Replacee == 'Arachnotron'))
+        ) return;
 		
 		// General replacement handling
 		else if(e.Replacee == 'Arachnotron')
